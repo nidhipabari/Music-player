@@ -4,6 +4,12 @@
 <head>
     <title>music player</title>
     <link rel="stylesheet" href="musicp.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,16 +22,31 @@
         </div>
 
         <div id="bell">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="Pink" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+            <!-- <button type="button" class="btn btn-primary">
+                Notifications <span class="badge bg-secondary">4</span>
+            </button> -->
 
         </div>
 
         <div id="icon">
-            <img src="">
+            <!-- <img src=""> -->
+            <button type="button" class="btn btn-primary position-relative">
+                Profile
+                <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden"></span>
+                </span>
+            </button>
         </div>
 
 
     </div>
-    
+
 
     <div style="display: flex;">
         <div style="display: flex;" class="maininfo">
@@ -44,8 +65,8 @@
                     Mitski Miyawaki, known mononymously as Mitski, is a Japanese-American singer-songwriter.<br>
                     Her sound ranges from indie-rock, indie-pop, art pop, pop, and alternative.
                 </div>
-                    
-                
+
+
 
                 <div id="button">
                     <button name="Play All">Play All</button>
@@ -59,40 +80,47 @@
             </div>
         </div>
 
-        <div id="sim">
+        <div id="sim" >
             <div id="simi">
                 <b>Similar Artists</b>
             </div>
+        <div style="display: flex; flex-wrap: wrap;">
+            <div id="ph1" style="display: flex; flex-wrap: wrap;">
+                <div class="imges">
+                    <img src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"
+                        width="50px" height="50px">
+                </div>
+                <div id="ph11">
+                    Phoebe Bridgers<br>
+                    Indie musician
 
-            <div id="ph1">
-                <!-- <div class="imges">
-                    <img
-                        <!-- src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"> -->
-                <!-- </div> -->
-                
-                Phoebe Bridgers<br>
-                Indie musician
+                </div>
             </div>
-            <div id="ph2">
-                <!-- <div class="imges">
-                    <img -->
-                <!-- src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg">
-                </div> -->
-                
+            <div id="ph2" style="display: flex; flex-wrap: wrap;">
+                <div class="imges">
+                    <img src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"
+                        width="50px" height="50px">
+                </div>
 
-                Phoebe Bridgers<br>
-                Indie musician
-            </div>
-            <div id="ph3">
-                <!-- <div class="imges">
-                    <img
-                         src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"> -->
-                <!-- </div>   -->
+                <div id="ph21">
+                    Phoebe Bridgers<br>
+                    Indie musician
+                </div>
 
-                
-                Phoebe Bridgers<br>
-                Indie musician
             </div>
+            <div id="ph3" style="display: flex; flex-wrap: wrap;">
+                <div class="imges">
+                    <img src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"
+                        width="50px" height="50px">
+                </div>
+
+                <div id="ph31">
+                    Phoebe Bridgers<br>
+                    Indie musician
+                </div>
+
+            </div>
+        </div>
         </div>
     </div>
 
@@ -103,10 +131,12 @@
 
                 <div id="song1">
                     <div class="btn">
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                          </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg>
                     </div>
                     <li style="padding-left: 15px;">
 
@@ -115,17 +145,19 @@
                         <div class="smal">
                             Mitski
                         </div>
-                        
+
                     </li>
                 </div>
 
 
                 <div id="song2">
                     <div class="btn">
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                          </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg>
                     </div>
                     <li style="padding-left: 15px;">
 
@@ -133,67 +165,75 @@
                         <div class="smal">
                             Mitski
                         </div>
-                        
+
                     </li>
                 </div>
 
 
                 <div id="song3">
                     <div class="btn">
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                          </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg>
                     </div>
                     <li style="padding-left: 15px;">
                         Mother<br>
                         <div class="smal">
                             Pink Floyd
                         </div>
-                        
+
                     </li>
                 </div>
 
 
                 <div id="song4">
                     <div class="btn">
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                          </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg>
                     </div>
-                    <li style="padding-left: 15px;" >
+                    <li style="padding-left: 15px;">
                         I Was Never There<br>
                         <div class="smal">
                             The Weeknd, Gesaffelstein
                         </div>
-                        
+
                     </li>
                 </div>
                 </li>
 
                 <div id="song5">
                     <div class="btn">
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                          </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg>
                     </div>
                     <li style="padding-left: 15px;">
                         Young and Beautiful<br>
                         <div class="smal">
                             Lana Del Rey
                         </div>
-                        
+
                     </li>
                 </div>
 
 
                 <div id="song6">
                     <div class="btn">
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16" onclick="changeRed()">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16" onclick="changeRed()">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                         </svg>
                     </div>
                     <li style="padding-left: 15px;">
@@ -201,11 +241,11 @@
                         <div class="smal">
                             Pink Floyd
                         </div>
-                        
+
                     </li>
-                
-                
-                    
+
+
+
                 </div>
 
             </ol>
@@ -217,49 +257,48 @@
             </div>
 
             <ol>
-            <div id="ph1">
-                <!-- <div class="imges">
+                <div id="ph1">
+                    <!-- <div class="imges">
                     <img
                         <!-- src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"> -->
-                <!-- </div> -->
-                <li style="padding-left: 15px;">
-                    Phoebe Bridgers<br>
-                    Indie musician
-                </li>
-                
-            </div>
-            <div id="ph2">
-                <!-- <div class="imges">
+                    <!-- </div> -->
+                    <li style="padding-left: 15px;">
+                        Phoebe Bridgers<br>
+                        Indie musician
+                    </li>
+
+                </div>
+                <div id="ph2">
+                    <!-- <div class="imges">
                     <img -->
-                <!-- src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg">
+                    <!-- src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg">
                 </div> -->
-                <li style="padding-left: 15px;">
-                Phoebe Bridgers<br>
-                Indie musician
-                </li>
-            </div>
-            <div id="ph3">
-                <!-- <div class="imges">
+                    <li style="padding-left: 15px;">
+                        Phoebe Bridgers<br>
+                        Indie musician
+                    </li>
+                </div>
+                <div id="ph3">
+                    <!-- <div class="imges">
                     <img
                          src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/06/28/114108_1345084.jpg.1500x1500_q95_crop-smart_upscale.jpg"> -->
-                <!-- </div>   -->
-                <li style="padding-left: 15px;">
-                Phoebe Bridgers<br>
-                Indie musician
-                </li>
-            </div>
+                    <!-- </div>   -->
+                    <li style="padding-left: 15px;">
+                        Phoebe Bridgers<br>
+                        Indie musician
+                    </li>
+                </div>
             </ol>
         </div>
 
     </div>
 
-<script>
-    function changeRed()
-    {
-        alert("clicked");
-        this.style.color = 'red';
-    }
-</script>
+    <script>
+        function changeRed() {
+            alert("clicked");
+            this.style.color = 'red';
+        }
+    </script>
 
 
 </body>

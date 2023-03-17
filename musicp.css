@@ -18,6 +18,14 @@ img{
     color: lightpink;
     padding: 10px 50px;
 }
+
+#bell{
+    padding: 15px 15px 15px 15px;
+    size-adjust: 20px;
+    margin-left: 10px;
+    
+
+}
 input {
     padding: 10px 60px;
     background-color: rgb(80, 42, 117);
@@ -26,6 +34,7 @@ input {
     margin-left: 700px;
     border-radius: 10px;
     margin-bottom: 10px;
+    margin-left: 880px;
     
 }
 
@@ -81,7 +90,12 @@ button{
     border-radius: 10px;
     text-align: center;
     margin-left: 5px;
+    width: 340px;
     
+}
+
+.imges{
+    border-radius: 10px;
 }
 
 #simi{
@@ -93,17 +107,33 @@ button{
 
 #ph1{
     padding: 20px 20px;
-    font-size: larger;
+    font-size: large;
+    margin-top: 50px;
 }
 
 #ph2{
     padding: 20px 20px;
-    font-size: larger;
+    font-size: large;
 }
 
 #ph3{
     padding: 20px 20px;
-    font-size: larger;
+    font-size: large;
+}
+
+#ph11{
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+#ph21{
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+#ph31{
+    margin-top: 27px;
+    margin-left: 10px;
 }
 
 /* .imges{
